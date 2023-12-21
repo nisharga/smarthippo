@@ -1,8 +1,23 @@
+import MaxWidthWrapper from '@/components/MaxWidthWrapper'
+import React from 'react'
 
- export default function Home() {
+const Homepage = () => {
   return (
-    <div className="">
-      hi Hell fkd fdm fkfmdmfkdfm
-    </div>
+    <MaxWidthWrapper>
+    <div className='py-20 mx-auto text-center flex flex-col items-center max-w-3xl'>
+          <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
+            Your marketplace for high-quality 
+            <span className='text-blue-600 pl-2'>
+              digital assets
+            </span>
+            .
+          </h1>
+          <p className='mt-6 text-lg max-w-prose text-muted-foreground'>Welcome to SmartHippo. Every asset on our
+            platform is verified by our team to ensure our
+            highest quality standards.</p>
+          </div>
+    </MaxWidthWrapper>
   )
 }
+
+export default Homepage
