@@ -1,18 +1,19 @@
 import Link from "next/link"
 import MaxWidthWrapper from "./MaxWidthWrapper"
+import { Icons } from "./Icons"
 
 const Navbar = () => {
   return (
-    <div className='bg-white sticky z-50 top-0 inset-x-0 h-16'>
+    <div className='sticky inset-x-0 top-0 z-50 h-16 bg-white'>
         <div className="relative bg-white">
         <header className='relative bg-white'>
          <MaxWidthWrapper>
             <div className="border-b border-gray-200">
-                <div className="flex h-16 items-center">
+                <div className="flex items-center h-16">
                 {/* <MobileNav /> */}
-                <div className='ml-4 flex lg:ml-0'>
+                <div className='flex ml-4 lg:ml-0'>
                 <Link href='/'>
-                  {/* <Icons.logo className='h-10 w-10' /> */}
+                  <Icons.logo className='w-10 h-10' />
                 </Link>
               </div> 
                 </div>
